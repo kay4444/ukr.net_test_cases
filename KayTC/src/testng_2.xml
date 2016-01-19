@@ -1,0 +1,67 @@
+<!DOCTYPE suite SYSTEM http://testng.org/testng-1.0.dtd>
+        <suite name="Parallel Tests" verbose="1" thread-count="4"
+        parallel="tests">
+        <tests>
+        <test name="Windows+IE9 Test">
+        <parameters>
+        <parameter name="platform"
+        value="Windows" />
+        <parameter name="browser"
+        value="Internet Explorer" />
+        <parameter name="version" value="8" />
+        <parameter name="url" value="http://
+ dl.dropbox.com/u/55228056/
+ bmicalculator.html"/>
+        </parameters>
+        <classes>
+        <class name="SeGridTest" />
+        </classes>
+        </test>
+        <test name="Mac+Firefox Test">
+        <parameters>
+        <parameter name="platform"
+        value="Mac" />
+        <parameter name="browser"
+        value="Firefox" />
+        <parameter name="version"
+        value="9.0.1" />
+        <parameter name="url" value="http://
+ dl.dropbox.com/u/55228056/
+ bmicalculator.html"/>
+        </parameters>
+        <classes>
+        <class name="SeGridTest" />
+        </classes>
+        </test>
+        <test name="iOS Test">
+        <parameters>
+        <parameter name="platform"
+        value="MAC" />
+        <parameter name="browser"
+        value="iPad" />
+        <parameter name="version" value="" />
+        <parameter name="url" value="http://
+ dl.dropbox.com/u/55228056/
+ mobilebmicalculator.html"/>
+        </parameters>
+        <classes>
+        <class name="SeGridTest" />
+        </classes>
+        </test>
+        <test name="Andorid Test">
+        <parameters>
+        <parameter name="platform"
+        value="Android" />
+        <parameter name="browser"
+        value="Android" />
+        <parameter name="version" value="2.6" />
+        <parameter name="url" value="http://
+ dl.dropbox.com/u/55228056/
+ mobilebmicalculator.html"/>
+        </parameters>
+        <classes>
+        <class name="SeGridTest" />
+        </classes>
+        </test>
+        </tests>
+        </suite>

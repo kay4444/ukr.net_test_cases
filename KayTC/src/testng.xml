@@ -1,0 +1,12 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My_auto_test" verbose="1">
+
+    <test name="ukr.net">
+        <classes>
+            <class name="TestCases.TestCases_block_1"/>
+        </classes>
+    </test>
+
+</suite>
